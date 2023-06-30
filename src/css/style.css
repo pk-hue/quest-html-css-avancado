@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(../images/bg-desktop.svg) var(--bg-color);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+}
+
+header .logo {
+    max-width: 250px;
+}
+
+
+main {
+    display: grid;
+    grid-template-areas: "ilustration-image content";
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main .ilustration-image {
+    grid-area: ilustration-image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main .ilustration-image {
+    width: 100%;
+   
+}
+
+main .content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 20px;
+}
+
+main .content h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+main .content p {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+main .content button {
+    background-color: #fff;
+    color: var(--bg-color);
+    font-size: 1.9rem;
+    font-weight: 100;
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: 5px 3px 7px 1px #000000;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+main .content button:hover {
+    background-color: var(--btn-color-hover);
+    color: #fff;
+    box-shadow: 2px 2px 5px 2px #000000be;
+}
+
+
+footer {
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    gap: 30px;
+}
+
+footer .social  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+footer .social:hover {
+    border: 1px solid #e980e7;
+    color: #e980e7;
+}
